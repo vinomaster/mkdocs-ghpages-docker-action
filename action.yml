@@ -1,0 +1,6 @@
+# action.yml
+name: 'MkDocs GitHub Deploy'
+description: 'Deploy MkDocs to GitHub Pages'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
