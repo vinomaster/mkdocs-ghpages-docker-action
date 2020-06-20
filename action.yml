@@ -1,6 +1,10 @@
 # action.yml
 name: 'MkDocs GitHub Deploy'
 description: 'Deploy MkDocs to GitHub Pages'
+author: 'https://github.com/vinomaster'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'orange'
 runs:
   using: 'docker'
   image: 'Dockerfile'
