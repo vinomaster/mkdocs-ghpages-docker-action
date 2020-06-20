@@ -1,14 +1,21 @@
-#FROM squidfunk/mkdocs-material:5.3.0
-FROM minidocks/mkdocs:1.0-pdf
-MAINTAINER gisolfi@us.ibm.com
+#----------------------------------------------------
+# Leverage pre-built MkDocs w/WeasyPrint
+#----------------------------------------------------
 
-RUN apk add git git-fast-import
+FROM minidocks/mkdocs:1.0-pdf
+MAINTAINER vinomaster (dan.gisolfi@ugmail.com)
+
+#----------------------------------------------------
+# Disable PDF Plugin for GitHub Pages Deployment
+#----------------------------------------------------
 
 ENV ENABLE_PDF_EXPORT=0
 
 #----------------------------------------------------
 # Prepare GitHub Action
 #----------------------------------------------------
+
+RUN apk add git git-fast-import
 
 COPY action.sh /action.sh
 
