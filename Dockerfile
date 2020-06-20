@@ -1,8 +1,8 @@
 #FROM squidfunk/mkdocs-material:5.3.0
-FROM minidocks/mkdocs:1.0-pdf  
+FROM minidocks/mkdocs:1.0-pdf
 MAINTAINER gisolfi@us.ibm.com
 
-RUN apk add git
+RUN apk add git git-fast-import
 
 ENV ENABLE_PDF_EXPORT=0
 
