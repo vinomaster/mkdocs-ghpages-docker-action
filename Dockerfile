@@ -14,6 +14,8 @@ MAINTAINER gisolfi@us.ibm.com
 #RUN pip3 install mkpdfs-mkdocs==1.0.1
 #RUN pip3 install mkdocs-pdf-export-plugin
 
+RUN apk add git
+
 ENV ENABLE_PDF_EXPORT=0
 
 #----------------------------------------------------
